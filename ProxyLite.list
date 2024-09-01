@@ -7,7 +7,7 @@ DOMAIN-SUFFIX,acg.rip
 DOMAIN,share.dmhy.org
 DOMAIN,nyaa.si
 DOMAIN-SUFFIX,hhanclub.top
-DOMAIN,raw.githubusercontent.com
+DOMAIN-SUFFIX,githubusercontent.com
 
 
 # 域名关键字匹配
