@@ -4,10 +4,15 @@
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,acg.rip
-DOMAIN,share.dmhy.org
-DOMAIN,nyaa.si
+DOMAIN-SUFFIX,dmhy.org
+DOMAIN-SUFFIX,nyaa.si
 DOMAIN-SUFFIX,hhanclub.top
 DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,thetvdb.com
+DOMAIN-SUFFIX,fanart.tv
+DOMAIN-SUFFIX,github.com
 
 
 # 域名关键字匹配
