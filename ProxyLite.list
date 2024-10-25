@@ -11,6 +11,8 @@ DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,thetvdb.com
+DOMAIN,api.themoviedb.org
+DOMAIN,api.thetvdb.com
 DOMAIN-SUFFIX,fanart.tv
 DOMAIN-SUFFIX,github.com
 
