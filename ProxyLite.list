@@ -1,6 +1,12 @@
 # 代理补充列表
 
 # 域名后缀匹配
+DOMAIN,api.themoviedb.org
+DOMAIN,api.tmdb.org
+DOMAIN,api.thetvdb.com
+DOMAIN,webservice.fanart.tv
+DOMAIN,api.telegram.org
+DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,acg.rip
@@ -8,13 +14,9 @@ DOMAIN-SUFFIX,dmhy.org
 DOMAIN-SUFFIX,nyaa.si
 DOMAIN-SUFFIX,hhanclub.top
 DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,themoviedb.org
-DOMAIN-SUFFIX,tmdb.org
-DOMAIN-SUFFIX,thetvdb.com
-DOMAIN,api.themoviedb.org
-DOMAIN,api.thetvdb.com
-DOMAIN-SUFFIX,fanart.tv
-DOMAIN-SUFFIX,github.com
+
+
+
 
 
 # 域名关键字匹配
