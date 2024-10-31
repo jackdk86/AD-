@@ -6,11 +6,11 @@ DOMAIN,api.tmdb.org
 DOMAIN,api.thetvdb.com
 DOMAIN,webservice.fanart.tv
 DOMAIN,api.telegram.org
+DOMAIN,dmhy.org
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,acg.rip
-DOMAIN-SUFFIX,dmhy.org
 DOMAIN-SUFFIX,nyaa.si
 DOMAIN-SUFFIX,hhanclub.top
 DOMAIN-SUFFIX,githubusercontent.com
