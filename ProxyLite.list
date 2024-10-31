@@ -1,7 +1,7 @@
 # 代理补充列表
 
 # 域名后缀匹配
-DOMAIN,*.themoviedb.org
+DOMAIN,api.themoviedb.org
 DOMAIN,api.tmdb.org
 DOMAIN,api.thetvdb.com
 DOMAIN,webservice.fanart.tv
