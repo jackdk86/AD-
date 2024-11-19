@@ -5,7 +5,6 @@
 DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
-DOMAIN-SUFFIX,pterclub.com
 # PT
 DOMAIN-SUFFIX,qingwapt.org
 DOMAIN-SUFFIX,qingwapt.com
@@ -74,25 +73,7 @@ IP-CIDR,180.76.76.76/32,no-resolve
 IP-CIDR,114.114.114.114/32,no-resolve
 IP-CIDR,114.114.115.115/32,no-resolve
 
-# PT
-DOMAIN-SUFFIX,hdatmos.club
-DOMAIN-SUFFIX,hdfans.org
-DOMAIN-SUFFIX,ourbits.club
-DOMAIN-SUFFIX,audiences.me
-DOMAIN-SUFFIX,ptsbao.club
-DOMAIN-SUFFIX,haidan.video
-DOMAIN-SUFFIX,keepfrds.com
-DOMAIN-SUFFIX,hdhome.org
-DOMAIN-SUFFIX,hdtime.org
-DOMAIN-SUFFIX,pterclub.com
-DOMAIN-SUFFIX,discfan.net
-DOMAIN-SUFFIX,totheglory.im
-DOMAIN-SUFFIX,pandapt.net
-DOMAIN-SUFFIX,ubits.club
-DOMAIN-SUFFIX,52pt.site
-DOMAIN-SUFFIX,zhuque.in
-DOMAIN-SUFFIX,ubits.club
-DOMAIN-SUFFIX,hares.top
+
 
 
 # 360
