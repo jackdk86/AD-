@@ -1,6 +1,7 @@
 # 代理补充列表
 
 # 域名后缀匹配
+# MP
 DOMAIN-SUFFIX,tumblr.com
 DOMAIN-SUFFIX,speed5.ntu.edu.tw
 DOMAIN-SUFFIX,fast.com
@@ -15,10 +16,13 @@ DOMAIN-SUFFIX,steampowered.com
 DOMAIN-SUFFIX,line-apps.com
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,instagram.com
-
-
-
-
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,thetvdb.com
+DOMAIN-SUFFIX,webservice.fanart.tv
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,slack.com
+DOMAIN-SUFFIX,github.com
 
 
 # 域名关键字匹配
