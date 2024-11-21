@@ -30,18 +30,18 @@ custom_proxy_group=🌐 全球直连`select`[]DIRECT`[]自动选择`[]港台日�
 custom_proxy_group=🌍 国外`select`[]DIRECT`[]自动选择`[]港台日新韩-自动`[]台日新韩-自动`[]香港节点`[]台湾节点`[]日本节点`[]新加坡节点`[]韩国节点`[]美国-自动`[]其他-自动`[]🚀 节点选择`[]🌞 手动切换[]REJECT
 
 ;3、节点组
-custom_proxy_group=自动选择`hidden: true`url-test`.*`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=港台日新韩-自动`hidden: true`url-test`(香港|HK|Hong Kong|🇭🇰|HongKong|台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|韩国|KR|首尔|春川|韓|KOR|🇰🇷|Korea)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=台日新韩-自动`hidden: true`url-test`(台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|广韩|韩国|KR|首尔|春川|韓|KOR|🇰🇷|Korea)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=香港节点`hidden: true`url-test`(香港|HK|Hong Kong|🇭🇰|HongKong)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=台湾节点`hidden: true`url-test`(台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=日本节点`hidden: true`url-test`(日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=新加坡节点`hidden: true`url-test`(新加坡|SG|坡|狮城|🇸🇬|Singapore)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=韩国节点`hidden: true`url-test`(韩国|KR|首尔|春川|韓|KOR|🇰🇷|Korea)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=美国节点`hidden: true`url-test`(美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=其他-自动`hidden: true`url-test`(柬埔|斯坦|尼泊|也纳|克兰|比利时|尔兰|立陶宛|冰岛|秘鲁|耳其|利亚|埃及|希腊|斯洛伐克|孟加|芬兰|阿联|英国|德国|南非|意大|法国|加拿|墨西|印度|越南|罗斯|瑞士|瑞典|智利|荷兰|比亚|巴西|沙特|班牙|泰国)`http://www.gstatic.com/generate_204`200,,50
-custom_proxy_group=🚀 节点选择`hidden: true`select`[]自动选择`[]港台日新韩-自动`[]台日新韩-自动`[]香港节点`[]台湾节点`[]日本节点`[]韩国节点`[]新加坡节点`[]美国节点`🌞 手动切换`[]DIRECT
-custom_proxy_group=🌞 手动切换`hidden: true`select`.*
+custom_proxy_group=自动选择``url-test`.*`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=港台日新韩-自动``url-test`(香港|HK|Hong Kong|🇭🇰|HongKong|台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|韩国|KR|首尔|春川|韓|KOR|🇰🇷|Korea)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=台日新韩-自动``url-test`(台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|广韩|韩国|KR|首尔|春川|韓|KOR|🇰🇷|Korea)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=香港节点``url-test`(香港|HK|Hong Kong|🇭🇰|HongKong)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=台湾节点``url-test`(台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=日本节点``url-test`(日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=新加坡节点``url-test`(新加坡|SG|坡|狮城|🇸🇬|Singapore)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=韩国节点``url-test`(韩国|KR|首尔|春川|韓|KOR|🇰🇷|Korea)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=美国节点``url-test`(美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=其他-自动``url-test`(柬埔|斯坦|尼泊|也纳|克兰|比利时|尔兰|立陶宛|冰岛|秘鲁|耳其|利亚|埃及|希腊|斯洛伐克|孟加|芬兰|阿联|英国|德国|南非|意大|法国|加拿|墨西|印度|越南|罗斯|瑞士|瑞典|智利|荷兰|比亚|巴西|沙特|班牙|泰国)`http://www.gstatic.com/generate_204`200,,50
+custom_proxy_group=🚀 节点选择``select`[]自动选择`[]港台日新韩-自动`[]台日新韩-自动`[]香港节点`[]台湾节点`[]日本节点`[]韩国节点`[]新加坡节点`[]美国节点`🌞 手动切换`[]DIRECT
+custom_proxy_group=🌞 手动切换``select`.*
 
 ;4、启用规则集
 enable_rule_generator=true
