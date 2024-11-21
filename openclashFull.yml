@@ -8,11 +8,11 @@ ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_s
 ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Disney/Disney.list
 ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Netflix/Netflix.list
 ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
-;ruleset=➡️ 国内,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaIPs/ChinaIPs.list
-ruleset=➡️ 国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-ruleset=➡️ 国内,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/SteamCN/SteamCN.list
-ruleset=➡️ 国内,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/China/China.list
-ruleset=➡️ 国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+;ruleset=🌐 全球直连,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaIPs/ChinaIPs.list
+ruleset=🌐 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+ruleset=🌐 全球直连,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/SteamCN/SteamCN.list
+ruleset=🌐 全球直连,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/China/China.list
+ruleset=🌐 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 ruleset=🌍 国外,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Proxy/Proxy.list
 ruleset=🌍 国外,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list
 ;ruleset=🌐 全球直连,[]GEOIP,LAN
@@ -20,6 +20,7 @@ ruleset=🌐 全球直连,[]GEOIP,CN
 ruleset=🐟 漏网之鱼,[]FINAL
 
 ;2、策略组（域名组-节点组）
+custom_proxy_group=🐈‍⬛ MP`select`[]DIRECT`[]自动选择`[]港台日新韩-自动`[]台日新韩-自动`[]香港自动`[]台湾自动`[]日本自动`[]新加坡自动`[]韩国自动`[]美国自动`[]其他自动`[]🚀 节点选择`[]🌞 手动切换`[]REJECT
 custom_proxy_group=👽 AI`select`[]DIRECT`[]自动选择`[]港台日新韩-自动`[]台日新韩-自动`[]香港自动`[]台湾自动`[]日本自动`[]新加坡自动`[]韩国自动`[]美国自动`[]其他自动`[]🚀 节点选择`[]🌞 手动切换`[]REJECT
 custom_proxy_group=📘 GitHub`select`[]DIRECT`[]自动选择`[]港台日新韩-自动`[]台日新韩-自动`[]香港自动`[]台湾自动`[]日本自动`[]新加坡自动`[]韩国自动`[]美国自动`[]其他自动`[]🚀 节点选择`[]🌞 手动切换`[]REJECT
 custom_proxy_group=👯‍♂️ TikTok`select`[]DIRECT`[]自动选择`[]港台日新韩-自动`[]台日新韩-自动`[]香港自动`[]台湾自动`[]日本自动`[]新加坡自动`[]韩国自动`[]美国自动`[]其他自动`[]🚀 节点选择`[]🌞 手动切换`[]REJECT
