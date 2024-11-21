@@ -46,3 +46,7 @@ custom_proxy_group=🌞 手动切换`select`.*
 ;4、启用规则集
 enable_rule_generator=true
 overwrite_original_rules=true
+
+;clash_rule_base=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GeneralClashConfig.yml
+
+;luck
