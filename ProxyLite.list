@@ -1,30 +1,12 @@
 # 代理补充列表
-DOMAIN-SUFFIX,perplexity.ai
 
 # 域名后缀匹配
-# MP
 DOMAIN-SUFFIX,tumblr.com
-DOMAIN-SUFFIX,speed5.ntu.edu.tw
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,dmhy.org
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,twitch.tv
-DOMAIN-SUFFIX,dbankcdn.com
 DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,blizzard.com
-DOMAIN-SUFFIX,steampowered.com
-DOMAIN-SUFFIX,line-apps.com
-DOMAIN-SUFFIX,line.me
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,themoviedb.org
-DOMAIN-SUFFIX,tmdb.org
-DOMAIN-SUFFIX,thetvdb.com
-DOMAIN-SUFFIX,webservice.fanart.tv
-DOMAIN-SUFFIX,telegram.org
-DOMAIN-SUFFIX,slack.com
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,bgm.tv
 
 
 # 域名关键字匹配
