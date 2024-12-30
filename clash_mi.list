@@ -1,0 +1,107 @@
+dns:
+  enable: true
+  listen: 0.0.0.0:1053  # 改为1053端口,避免与系统DNS冲突
+  enhanced-mode: fake-ip # 添加DNS模式设置
+  fake-ip-range: 198.18.0.1/16 # 保持原有配置
+  
+  # DNS服务器配置
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  
+  # DNS劫持防护配置
+  nameserver:
+    - 'https://dns.alidns.com/dns-query'
+    - 'https://doh.pub/dns-query'
+  
+  # DNS本地解析配置
+  fallback:
+    - 'https://1.1.1.1/dns-query'
+    - 'https://dns.google/dns-query'
+  
+  # DNS防污染配置
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 127.0.0.1/8
+      - 0.0.0.0/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
+      - +.github.com
+  
+  # DNS缓存配置
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftncsi.com'
+    - '+.msftconnecttest.com'
+    - '+.xbox.*.microsoft.com'
+    - '+.xboxlive.com'
+  
+  # DNS分流规则
+  nameserver-policy:
+    'geosite:cn': [223.5.5.5, 119.29.29.29]
+    '+.google.com': ['https://dns.google/dns-query']
+    '+.github.com': ['https://1.1.1.1/dns-query']
+;1、域名组
+ruleset=🐈‍⬛ MP,https://raw.githubusercontent.com/jackdk86/AD-/refs/heads/main/MP.list
+ruleset=👽 AI,https://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/AI.list
+ruleset=📘 GitHub,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
+ruleset=👯‍♂️ TikTok,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.list
+ruleset=🙋 Telegram,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
+ruleset=🎞️ Youtube,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/HBO/HBO.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/HBO/HBO_No_Resolve.yaml
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Hulu/Hulu.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Hulu/Hulu_No_Resolve.yaml
+ruleset=🌍 国外,https://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/Proxy.list
+ruleset=🌍 国外,https://raw.githubusercontent.com/jackdk86/AD-/refs/heads/main/ProxyLite.list
+ruleset=🌍 国外,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list
+ruleset=🛑 广告拦截,https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/refs/heads/main/AWAvenue-Ads-Rule.txt
+ruleset=🛑 广告拦截,https://raw.staticdn.net/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
+ruleset=🛑 广告拦截,https://raw.staticdn.net/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml
+ruleset=🛑 广告拦截,https://raw.staticdn.net/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
+ruleset=🛑 广告拦截,https://raw.staticdn.net/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml
+ruleset=🛑 广告拦截,https://raw.staticdn.net/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
+ruleset=🔜 国内,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
+
+
+;2、策略组（域名组-节点组）
+custom_proxy_group=🐈‍⬛ MP`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=🎞️ Youtube`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=👽 AI`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=📘 GitHub`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=👯‍♂️ TikTok`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=🙋 Telegram`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=📀 流媒体`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=🌍 国外`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=🔜 国内`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
+custom_proxy_group=🐟 漏网之鱼`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩美-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+
+;3、节点组
+custom_proxy_group=所有-自动`url-test`.*`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=港台日新韩-自动`url-test`(广港|广台|广日|广新|广韩|广美|香港|HK|Hong Kong|🇭🇰|HongKong|台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|韩国|KR|首尔|春川|🇰🇷|Korea)`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=台日新韩美-自动`url-test`(广台|广日|广新|广韩|广美|台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|韩国|KR|首尔|春川|🇰🇷|Korea|美|US|🇺🇸|United States)`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=香港-自动`url-test`(广港|香港|HK|Hong Kong|🇭🇰|HongKong)`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=台湾-自动`url-test`(广台|台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan)`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=日本-自动`url-test`(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=新加坡-自动`url-test`(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=韩国-自动`url-test`(广韩|韩国|KR|首尔|春川|🇰🇷|Korea)`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=美国-自动`url-test`(广美|美|US|纽约|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|🇺🇸|United States)`http://www.gstatic.com/generate_204`160,300
+custom_proxy_group=其他-自动`url-test`(柬埔|斯坦|尼泊|也纳|克兰|比利时|尔兰|立陶宛|冰岛|秘鲁|耳其|利亚|埃及|希腊|斯洛伐克|孟加|芬兰|阿联|英国|德国|南非|意大|法国|加拿|墨西|印度|越南|罗斯|瑞士|瑞典|智利|荷兰|比亚|巴西|沙特|班牙|泰国|迪拜|以色|马来|莫斯|菲律)`http://www.gstatic.com/generate_204`160,300
+
+;4、启用规则集
+enable_rule_generator=true
+overwrite_original_rules=true
