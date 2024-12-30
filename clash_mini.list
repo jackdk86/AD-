@@ -1,23 +1,29 @@
 dns:
   enable: true
-  listen: 0.0.0.0:1053  # 改为1053端口,避免与系统DNS冲突
-  enhanced-mode: fake-ip # 添加DNS模式设置
-  fake-ip-range: 198.18.0.1/16 # 保持原有配置
-  
-  # DNS服务器配置
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "geosite:cn"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+
+# DNS服务器配置
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-  
+# 2. 性能优化
+profile:
+  store-selected: true
+  store-fake-ip: true
+
   # DNS劫持防护配置
   nameserver:
     - 'https://dns.alidns.com/dns-query'
     - 'https://doh.pub/dns-query'
   
-  # DNS本地解析配置
-  fallback:
-    - 'https://1.1.1.1/dns-query'
-    - 'https://dns.google/dns-query'
   
   # DNS防污染配置
   fallback-filter:
@@ -50,6 +56,7 @@ dns:
     'geosite:cn': [223.5.5.5, 119.29.29.29]
     '+.google.com': ['https://dns.google/dns-query']
     '+.github.com': ['https://1.1.1.1/dns-query']
+
 ;1、域名组
 ruleset=🐈‍⬛ MP,https://raw.githubusercontent.com/jackdk86/AD-/refs/heads/main/MP.list
 ruleset=👽 AI,https://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/AI.list
